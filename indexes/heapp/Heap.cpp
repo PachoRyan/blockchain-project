@@ -21,7 +21,7 @@ int main()
     Heap<int,Trans*>* heap = new Heap<int, Trans*>();
     Trans* transpointer;
 
-    //heap->top();
+    //heapp->top();
     heap->push(8,t);
     heap->push(9,t2);
     heap->push(10,t);
@@ -37,11 +37,11 @@ int main()
 
 
     /*
-    heap->push(55);
-    cout<<heap->top()<<endl;//55
-    heap->pop();
-    heap->pop();
-    cout<<heap->top()<<endl;//49
+    heapp->push(55);
+    cout<<heapp->top()<<endl;//55
+    heapp->pop();
+    heapp->pop();
+    cout<<heapp->top()<<endl;//49
     */
 
 }
