@@ -7,6 +7,7 @@
 
 struct Transaction
 {
+public:
     std::string from;
     std::string to;
     unsigned long int moment; // Unix epoch time
@@ -34,8 +35,17 @@ struct Transaction
 std::string to_string(Transaction tr)
 {
     std::string stringified = "";
-    stringified += tr.from;
-    stringified += tr.to;
-    stringified += std::to_string(tr.moment) + std::to_string(tr.ammount);
+    stringified += tr.from + "\t\t";
+    stringified += tr.to + "\t\t";
+    stringified += std::to_string(tr.moment) + "\t" + std::to_string(tr.ammount);
+    return stringified;
+}
+
+std::string to_string(Transaction* tr)
+{
+    std::string stringified = "";
+    stringified += tr->from + "\t\t";
+    stringified += tr->to + "\t\t";
+    stringified += std::to_string(tr->moment) + "\t" + std::to_string(tr->ammount);
     return stringified;
 }
