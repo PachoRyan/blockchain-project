@@ -12,19 +12,13 @@ struct Trans{
     string name;
     string apellido;
     int amount;
-
-
-
 };
 
 int main()
 {
     Trans* t = new Trans;
-
     Trans* t2 = new Trans;
-
     Heap<int,Trans*>* heap = new Heap<int, Trans*>();
-
     Trans* transpointer;
 
     //heap->top();
